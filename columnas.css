@@ -1,0 +1,17 @@
+/* como es solo una etiqueta de html no lleva ni punto ni gato # */
+nav {
+    background: #63b7af;
+}
+/* como es una clase inventada iniciamos con punto */
+.columna{
+    background: #ff427f;
+    color: #ffd8a6;
+    padding: 20px;
+    width: 25%;
+    /* para ver mejor los parrafos */
+    margin: 10px;
+}
+.padre{
+    /* esto me permitio que se posicione uno al lado del otro */
+    display: flex;
+}

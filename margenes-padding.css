@@ -1,0 +1,17 @@
+/* https://colorhunt.co/ exelente pagina para convinacion de colores Importante */
+h1 {
+    background: #f57b51;
+    /*margin-left: 100px;
+     margin-bottom: 200px; */
+     /* margin: 100px; */
+     /* los 200 arriba y abajo, 100 derecha y izquierda */
+     /* margin: 200px 100px; */
+     /* como las agujas del reloj arriba der, izq y abajo */
+     margin: 100px 10px 20px 500px;
+}
+/* IMPORTANTE EL PADDING ES UN MARGEN INTERIOR DE LA CAJA */
+p {
+    background: #d63447;
+    /* IMORTANTE ES IGUAL QUE EL MARGIN SE PUEDE UTILIZAR IGUAL */
+    padding: 100px;
+}

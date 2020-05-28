@@ -1,0 +1,71 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+h2 {
+    font-weight: 400;
+}
+p{
+    font-weight: 300;
+}
+
+
+
+.container {
+    /* el auto es cuando quiero que se centre con un width */
+    margin: 0 auto;
+    width: 90%;
+}
+.flex {
+    display: flex;
+    /* el flex-wrap se maneja con el width  */
+    flex-wrap: wrap;
+}
+.text-center {
+    text-align: center;
+}
+.columna {
+    background: rgb(228, 228, 228);
+    color: #333333;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    padding: 10px;
+    /* esto es para que los bordes sean mas redondeados */
+    border-radius: 5px;
+    /* el primer valor es el la derecha, el segundo el de abajo y si es menos el de arriba, el tercer valor es un degradado y el cuarto es el color */
+    box-shadow: 5px 5px 10px #888888;
+    /* con width le estas diciendo que ocupe el ancho disponible con 100% */
+    width: 23%;
+    /* con box-sizing  se calcula en forma automatica el padding y el border por esta accion.  Cubris el borde con el width height, EL MARGEN NO LO CUBRE ESTA ACCION por eso es necesario hacerlo en forma auto el margin*/
+    box-sizing: border-box;
+}
+.precio {
+    font-size: 50px;
+    color: #00dac7;
+}
+/* para tranformar un ancla a en un bloque pongo display block */
+.btn-precio {
+    background: salmon;
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.btn-precio:hover {
+    background: rgb(247,100,84);
+}
+
+@media (max-width: 1070px) {
+    .columna {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+/* como es una etiqueta de html no lleva ni gato ni punto */
+button{
+    background: #6a097d;
+    color: #ffdcb4;
+}
+/* para darle animacion a mi boton */
+button:hover{
+    background: #f57b51;
+}
+/* esto sirve cuando yo hago un click cambia de color */
+button:active{
+    background: #9a1f40;
+}

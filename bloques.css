@@ -1,0 +1,9 @@
+h1 {
+    background: salmon;
+    /* h1 que es un elemento de bloque lo voy a transformar en elemento de linea con una propiedad display inline-block */
+    display: inline-block;
+}
+a {
+    background: salmon;
+    display: block; 
+}

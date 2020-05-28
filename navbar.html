@@ -1,0 +1,32 @@
+<!-- en bluuweb tiene una guia completa con ejemplos de flex box bastante interesante -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!-- nav es para encerrar nuestro menu de navegacion -->
+    <nav>
+        <!-- creo una accion con javascript puedo serla adentro o afuera -->
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <a href="#" class="nav-enlace desaparece">Inicio</a>
+        <a href="#"class="nav-enlace desaparece">Nosotros</a>
+        <a href="#" class="nav-enlace desaparece">Servicios</a>
+        <a href="#" class="nav-enlace desaparece">Contacto</a>
+    </nav>
+    <!-- esta funcion permite que agrege a desaparezca el enlace -->
+    <!-- toggle hace que coloque la clase y la desaparezca -->
+    <script>
+        function accion() {
+            console.log("esta funcionando mi boton")
+            var ancla = document.getElementsByClassName("nav-enlace");
+            for(var i = 0; i< ancla.length; i++){
+                ancla[i].classList.toggle("desaparece");
+            }
+        }
+    </script>
+</body>
+</html>

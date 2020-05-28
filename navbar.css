@@ -1,0 +1,53 @@
+.nav-enlace {
+    /* es combeniente siempre ponerlo en bloque para trabajar mejor con flexbox, hay varias opciones en este caso como las anclas estan en linea vamos a trabajar con la opcion inline-block  tambien hace que se despegue de la parte superior*/
+    /* si no se coloca eso las anclas no vas a poder utilizar flexbox en este momento las anclas son cajas gracias a inline-block */
+    display: inline-block;
+    background: salmon;
+    color: #ffffff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover {
+    background: rosybrown;
+}
+/* en este caso nuestro contenedor padre es el nav para utilizar flexbox ya las anclas son un bloque por su display inline-block */
+nav {
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    /* para poner esta accion si o si tiene que tener un display flex en el contenedor padre y en las anclas tienen que tener un display inline-block */
+    justify-content: space-around;
+}
+/* LOS MEDIA QUERY SIRVEN PARA QUE SEA RESPONSIVE es hacer otra hoja de estilo desde 0 a 600 */
+
+.nav-boton {
+    background: salmon;
+    color: white;
+    padding: 10px 0;
+    border: 2px solid #ffffff;
+    /* cuando suba a 600px el display del boton va desaparecer con la propidad display none */
+    display: none;
+}
+
+
+/* en lo media query son exepciones lo de arriba se coloca en todo nuestro sitio web */
+
+@media (max-width: 600px) {
+    /* .facet_sidebar {
+        display: none; 
+    }*/
+    /* VER LA PAGINA DE BLUUWEB PARA VER LAS PROPIEDADES DE FLEXBOX */
+    nav {
+        background: black;
+        flex-direction: column;
+    } 
+    .nav-enlace {
+        margin: 10PX 0;
+    }   
+    .nav-boton {
+        display: inline-block;
+    }
+    .desaparece {
+        display: none;
+    }
+}
